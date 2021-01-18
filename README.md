@@ -1,2 +1,2 @@
-# imbalanced_sdm2021
+# pac-imbalanced
 Learning Reliable Rules under Class Imbalance (SDM 2021)
