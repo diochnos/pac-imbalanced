@@ -142,7 +142,7 @@ public:
 			}
 			else if ( static_cast<int> (h[i]) == 1 ) w++;
 		}
-        // risk = lambda^{m}(lambda^{u} + lambda^{w} - 2lambda^{u+w})
+        	// risk = lambda^{m}(lambda^{u} + lambda^{w} - 2lambda^{u+w})
 		// See Proposition 4.1 from the paper
 		//std::cout << "     m = " << m << "   u = " << u << "   w = " << w << "          " << std::flush;
 		return pow(static_cast<long double>(PROB_LAMBDA), static_cast<long double>(m+u)) + pow(static_cast<long double>(PROB_LAMBDA), static_cast<long double>(m+w)) - static_cast<long double>(2.0) * pow(static_cast<long double>(PROB_LAMBDA), static_cast<long double>(m+u+w));
@@ -853,7 +853,7 @@ void run_EVO_experiment () {
 		std::cout << "       target size: " << current_target_size << " weight lower bound: " << lower_bound_target_weight << std::endl;
 		
 		
-        // This definition of frontier is for the uniform distribution only
+        	// This definition of frontier is for the uniform distribution only
 		int frontier = static_cast<int> ( ceil(log(3.0/(2.0 * EPSILON))/log(2.0)) ); // EPSILON is prob of error (not how far off the correlation function is)
 		/*
 		long double critical_minimum = EPSILON;
@@ -869,7 +869,7 @@ void run_EVO_experiment () {
 		std::cout << "       Frontier = " << frontier << std::endl;
 		
 		// This definition of tolerance is for the uniform distribution only;
-        // otherwise see the paper https://link.springer.com/chapter/10.1007/978-3-319-46379-7_7
+        	// otherwise see the paper https://link.springer.com/chapter/10.1007/978-3-319-46379-7_7
 		long double tolerance = static_cast<long double> ( pow( static_cast<long double> (2.0), static_cast<long double> (0.0-2.0*frontier)) );
 		fd_log << "Tolerance ( 2^(-2q) ) = " << tolerance << std::endl;
 		int num_generations = 2*frontier; // In general it is 3*q, but under the uniform distribution 2*q generations are enough!
@@ -1001,7 +1001,7 @@ void run_EVO_experiment () {
 			examples.clear();
 		}
 		
-				// First push them, then compute
+		// First push them, then compute
 		hypotheses_sizes.push_back(hyp_sizes_against_this_target_size);
 		hypotheses_errors.push_back(hyp_errors_against_this_target_size);
 		hypotheses_recalls.push_back(hyp_recalls_against_this_target_size);
