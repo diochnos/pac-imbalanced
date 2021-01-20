@@ -1,22 +1,24 @@
 # pac-imbalanced
+
 Learning Reliable Rules under Class Imbalance (SDM 2021)
+========================================================
 
 You can compile the source code on command line with the command:
 g++ experiments.cpp
 
 The main function is between the lines 1166 - 1175.
 
--- Run experiments for the algorithm Find-S for PAC learning:
-   o Uncomment line 1170
-   o Comment line 1172
-   o Recompile the program and run the executable
-   o Several text files will be generated with results and statistics on these results.
+* Run experiments for the algorithm Find-S for PAC learning:
+  - Uncomment line 1170
+  - Comment line 1172
+  - Recompile the program and run the executable
+  - Several text files will be generated with results and statistics on these results.
 
--- Run experiments for the Swapping algorithm from the framework of evolvability:
-   o Comment line 1170
-   o Uncomment line 1172
-   o Recompile the program and run the executable
-   o Several text files will be generated with results and statistics on these results.
+* Run experiments for the Swapping algorithm from the framework of evolvability:
+  - Comment line 1170
+  - Uncomment line 1172
+  - Recompile the program and run the executable
+  - Several text files will be generated with results and statistics on these results.
 
 
 
